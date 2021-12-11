@@ -1,3 +1,13 @@
+
+<div class="div messages messages-error" *ngIf="errors?.length">
+    <div class="div messages-container">
+        <div *ngFor="let error of errors">
+            {{messagePerErrorCode[error]}}
+        </div>
+    </div>
+</div>
+
+
 <form autocomplete="off" novalidate  [formGroup]="form">
 
     <fieldset>
